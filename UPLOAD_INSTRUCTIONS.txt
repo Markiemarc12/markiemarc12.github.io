@@ -1,0 +1,17 @@
+Upload these files to the ROOT of your GitHub Pages repo: markiemarc12.github.io
+
+Required root files:
+- index.html
+- styles.css
+- walkietalkie.html
+- fm-radio.html
+- power-systems.html
+- battery-analytics.html
+- radio-telescope.html
+- velco.html
+- images/Finished_PCB.JPG
+
+Important:
+- styles.css must contain CSS code, not this instruction text.
+- The image path is case-sensitive: images/Finished_PCB.JPG
+- If GitHub asks whether to replace files with the same name, replace them.
