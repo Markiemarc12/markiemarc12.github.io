@@ -1,95 +1,375 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- PROJECT PAGE: edit title, sections, bullets, and links below. -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VELCO Engineering Internship | Brandon Johansen</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+/* =========================================================
+   Brandon Johansen — Minimal Electrical Engineering Portfolio
+   File: styles.css
 
-<body>
+   Edit colors here:
+   --ink: main text/navy
+   --blue: electrical accent
+   --grid: subtle circuit/grid line
+   ========================================================= */
 
-<header class="hero">
-  <div class="hero-inner">
-    <a class="page-kicker" href="index.html">← Back to Portfolio</a>
-    <h1>VELCO Engineering Internship</h1>
-    <p>Transmission utility asset maintenance, alarm logic, documentation, and condition monitoring.</p>
-    <div class="badges">
-      <span class="badge">Power Utilities</span>
-      <span class="badge">SF6 Alarms</span>
-      <span class="badge">Asset Data</span>
-      <span class="badge">Condition Monitoring</span>
-    </div>
-  </div>
-</header>
+:root {
+  --ink: #101827;
+  --muted: #5b6677;
+  --blue: #1d4ed8;
+  --blue-soft: #eaf1ff;
+  --panel: #ffffff;
+  --paper: #f7f9fc;
+  --line: #d9e2ef;
+  --grid: rgba(29, 78, 216, 0.07);
+  --radius: 14px;
+}
 
-<main>
+* {
+  box-sizing: border-box;
+}
 
-<section class="section">
-  <div class="placeholder-img">Add project image here later</div>
-  <p class="note">Keep this page general and avoid posting sensitive utility information.</p>
-</section>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px),
+    var(--paper);
+  background-size: 34px 34px;
+  line-height: 1.6;
+}
 
-<section class="section">
-  <h2>What is this?</h2>
-  <p class="lead">This internship work involves high-voltage transmission assets, breaker documentation, SF6 alarm logic, battery testing, oil analysis, and condition-monitoring data.</p>
-</section>
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
 
-<section class="section">
-  <div class="split">
-    <div>
-      <h2>What I Built</h2>
-      <ul>
-            <li>High-voltage breaker inspection documentation</li>
-            <li>Temperature-compensated SF6 alarm logic review</li>
-            <li>Alarm sensitivity investigation</li>
-            <li>Manufacturer documentation review</li>
-            <li>Battery and oil-analysis support</li>
-      </ul>
-    </div>
+a:hover {
+  text-decoration: underline;
+}
 
-    <div class="callout">
-      <h2>Technical Focus</h2>
-      <ul>
-            <li>Transmission equipment</li>
-            <li>Alarm logic</li>
-            <li>Deadband analysis</li>
-            <li>Field data</li>
-            <li>Maintenance documentation</li>
-      </ul>
-    </div>
-  </div>
-</section>
+/* ---------- Top navigation ---------- */
 
-<section class="section">
-  <h2>Engineering Challenges</h2>
-  <ul>
-            <li>Translating OEM documentation into field-usable procedures</li>
-            <li>Validating alarm behavior against field data</li>
-            <li>Separating logic issues from operational sensitivity</li>
-            <li>Communicating findings clearly</li>
-  </ul>
-</section>
+.topbar {
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
 
-<section class="section">
-  <h2>Results / Current Status</h2>
-  <p>Supported asset maintenance engineering work by connecting field data, equipment documentation, and engineering judgment.</p>
+.nav {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 14px 22px;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+}
 
-  <!-- Optional buttons:
-  Replace # with your GitHub repo, report PDF, or demo video when ready.
-  <div class="button-row">
-    <a class="button" href="#">GitHub Repository</a>
-    <a class="button secondary" href="#">Project Report</a>
-  </div>
-  -->
-</section>
+.nav-name {
+  font-weight: 800;
+  color: var(--ink);
+}
 
-</main>
+.nav-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
 
-<footer class="footer">
-  © 2026 Brandon Johansen
-</footer>
+.nav-links a {
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 0.94rem;
+}
 
-</body>
-</html>
+/* ---------- Main layout ---------- */
+
+.wrapper {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 46px 22px 70px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 34px;
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: clamp(26px, 5vw, 44px);
+  box-shadow: 0 14px 36px rgba(16, 24, 39, 0.07);
+}
+
+.eyebrow {
+  color: var(--blue);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  margin-bottom: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 6vw, 4.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+}
+
+.hero-text {
+  color: var(--muted);
+  font-size: 1.12rem;
+  max-width: 720px;
+  margin: 18px 0 0;
+}
+
+.profile-card {
+  text-align: center;
+}
+
+.profile-photo {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--blue-soft);
+  box-shadow: 0 10px 30px rgba(16, 24, 39, 0.12);
+  background: #eef2f7;
+}
+
+/* If no profile image exists yet, this placeholder appears instead. */
+.profile-placeholder {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background:
+    radial-gradient(circle at 30% 20%, #dbeafe, #f8fafc 70%);
+  border: 4px solid var(--blue-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e3a8a;
+  font-weight: 800;
+  text-align: center;
+  padding: 18px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.tag {
+  background: var(--blue-soft);
+  color: #1746a2;
+  border: 1px solid #c9d9ff;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.section {
+  margin-top: 28px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: clamp(22px, 4vw, 30px);
+  box-shadow: 0 10px 28px rgba(16, 24, 39, 0.05);
+}
+
+.section-title {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 0 0 18px;
+  font-size: 1.55rem;
+  letter-spacing: -0.03em;
+}
+
+.section-title::before {
+  content: "";
+  width: 34px;
+  height: 3px;
+  background: var(--blue);
+  border-radius: 999px;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 24px;
+}
+
+.info-box {
+  background: #fbfdff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--blue);
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.info-box h3 {
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+li {
+  margin: 6px 0;
+}
+
+/* ---------- Cards ---------- */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(16, 24, 39, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+  background: #edf2f7;
+}
+
+.card-body {
+  padding: 17px;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  line-height: 1.25;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.placeholder {
+  height: 190px;
+  background:
+    linear-gradient(135deg, #f8fafc, #eaf1ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #4b5f7a;
+  font-weight: 800;
+  padding: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+/* ---------- Project pages ---------- */
+
+.project-header {
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+}
+
+.project-header-inner {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 42px 22px;
+}
+
+.back-link {
+  display: inline-block;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.project-image {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  margin-top: 18px;
+}
+
+.project-layout {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 28px 22px 70px;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--blue);
+  color: white;
+  font-weight: 800;
+}
+
+.button.secondary {
+  background: #e8eef7;
+  color: var(--ink);
+}
+
+footer {
+  color: var(--muted);
+  text-align: center;
+  padding: 36px 22px 55px;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 760px) {
+  .hero,
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    text-align: left;
+  }
+
+  .profile-placeholder,
+  .profile-photo {
+    width: 165px;
+    height: 165px;
+  }
+
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

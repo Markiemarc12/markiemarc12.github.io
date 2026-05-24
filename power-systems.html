@@ -1,94 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- PROJECT PAGE: edit title, sections, bullets, and links below. -->
+  <!-- HOME PAGE
+       To add your photo:
+       1. Upload a headshot to images/profile.jpg
+       2. In the hero profile area below, replace the placeholder div with:
+          <img class="profile-photo" src="images/profile.jpg" alt="Brandon Johansen">
+  -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Power Systems Modeling | Brandon Johansen</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Brandon Johansen | Electrical Engineering Portfolio</title>
+  <link rel="stylesheet" href="styles.css?v=20">
 </head>
 
 <body>
 
-<header class="hero">
-  <div class="hero-inner">
-    <a class="page-kicker" href="index.html">← Back to Portfolio</a>
-    <h1>Power Systems Modeling</h1>
-    <p>Power-flow modeling, Y-bus construction, ECF formulations, and numerical solution methods.</p>
-    <div class="badges">
-      <span class="badge">Power Systems</span>
-      <span class="badge">Y-Bus</span>
-      <span class="badge">Optimization</span>
-      <span class="badge">Numerical Methods</span>
+<header class="topbar">
+  <nav class="nav">
+    <a class="nav-name" href="index.html">Brandon Johansen</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
     </div>
-  </div>
+  </nav>
 </header>
 
-<main>
+<main class="wrapper">
 
-<section class="section">
-  <div class="placeholder-img">Add project image here later</div>
-  <p class="note">Add a diagram or screenshot later as images/power-systems.png.</p>
+<section class="hero">
+  <div>
+    <div class="eyebrow">Electrical Engineering Portfolio</div>
+    <h1>Power systems, RF, telemetry, and engineering analytics.</h1>
+    <p class="hero-text">
+      I am an Electrical Engineering student interested in intelligent energy infrastructure,
+      computational power systems, RF systems, control systems, optimization, and measurement-driven engineering.
+    </p>
+
+    <div class="tags">
+      <span class="tag">Power Systems</span>
+      <span class="tag">RF Systems</span>
+      <span class="tag">Telemetry</span>
+      <span class="tag">Optimization</span>
+      <span class="tag">Condition Monitoring</span>
+    </div>
+  </div>
+
+  <div class="profile-card">
+    <!-- Replace this placeholder with your headshot later:
+         <img class="profile-photo" src="images/profile.jpg" alt="Brandon Johansen">
+    -->
+    <div class="profile-placeholder">
+      Add<br>Profile Photo<br>images/profile.jpg
+    </div>
+  </div>
 </section>
 
-<section class="section">
-  <h2>What is this?</h2>
-  <p class="lead">This work focuses on computational modeling of power systems, including feeder representation, admittance-matrix construction, power-flow formulations, and numerical solution methods.</p>
-</section>
+<section id="about" class="section">
+  <h2 class="section-title">About</h2>
 
-<section class="section">
-  <div class="split">
+  <div class="two-col">
     <div>
-      <h2>What I Built</h2>
+      <p class="lead">
+        My technical interests are centered on systems that connect physical equipment,
+        measurements, modeling, and engineering decisions. I like work that combines
+        hardware, software, field data, and first-principles electrical engineering.
+      </p>
+
+      <h3>Technical Interests</h3>
       <ul>
-            <li>Y-bus matrix construction</li>
-            <li>Distribution feeder modeling</li>
-            <li>Power-flow study tools</li>
-            <li>Sanity checks for system equations</li>
-            <li>Numerical-method exploration</li>
+        <li>Power flow solvers, Y-bus construction, and ECF formulations</li>
+        <li>Optimization and numerical methods</li>
+        <li>Newton-Raphson and Gauss-Seidel methods</li>
+        <li>Control systems and inverter modeling</li>
+        <li>Communications, RF systems, and telemetry</li>
+        <li>Engineering data analysis and condition monitoring</li>
       </ul>
     </div>
 
-    <div class="callout">
-      <h2>Technical Focus</h2>
+    <aside class="info-box">
+      <h3>Academic Snapshot</h3>
+      <p><strong>GPA:</strong> 3.79</p>
+      <p><strong>Advanced Coursework:</strong></p>
       <ul>
-            <li>Y-bus construction</li>
-            <li>Power-flow solvers</li>
-            <li>ECF formulations</li>
-            <li>Newton-Raphson</li>
-            <li>Gauss-Seidel</li>
-            <li>Optimization</li>
+        <li>EE5990 Distribution Grid Analysis and Optimization</li>
+        <li>CS 5611 Machine Learning for Engineers</li>
       </ul>
-    </div>
+    </aside>
   </div>
 </section>
 
-<section class="section">
-  <h2>Engineering Challenges</h2>
-  <ul>
-            <li>Connecting circuit theory to code</li>
-            <li>Validating admittance entries</li>
-            <li>Interpreting power-flow results</li>
-            <li>Organizing engineering software tools</li>
-  </ul>
+<section id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
+  <p class="lead">
+    Selected technical projects involving RF hardware, embedded systems, power-system modeling, and engineering data.
+  </p>
+
+  <div class="card-grid">
+
+    <article class="card">
+      <a href="walkietalkie.html">
+        <img src="images/Finished_PCB.JPG" alt="RF walkie-talkie and FM radio PCB">
+      </a>
+      <div class="card-body">
+        <h3><a href="walkietalkie.html">RF Walkie-Talkie + FM Radio System</a></h3>
+        <p>Custom PCB RF communication system integrating transceiver, FM receiver, display, audio, and power subsystems.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <a href="fm-radio.html"><div class="placeholder">FM Radio + Bluetooth<br>Image Coming Soon</div></a>
+      <div class="card-body">
+        <h3><a href="fm-radio.html">FM Radio + Bluetooth System</a></h3>
+        <p>Embedded audio project with FM reception, Bluetooth playback, controls, display integration, and source switching.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <a href="power-systems.html"><div class="placeholder">Power Systems Modeling<br>Image Coming Soon</div></a>
+      <div class="card-body">
+        <h3><a href="power-systems.html">Power Systems Modeling</a></h3>
+        <p>Power-flow and distribution modeling work involving Y-bus construction, ECF concepts, and numerical solution methods.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <a href="battery-analytics.html"><div class="placeholder">Battery Analytics<br>Image Coming Soon</div></a>
+      <div class="card-body">
+        <h3><a href="battery-analytics.html">Battery Analytics Tool</a></h3>
+        <p>Engineering data-analysis tooling for battery test results, threshold logic, severity tracking, and exports.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <a href="radio-telescope.html"><div class="placeholder">Radio Telescope<br>In Progress</div></a>
+      <div class="card-body">
+        <h3><a href="radio-telescope.html">Radio Telescope</a></h3>
+        <p>Planned RF instrumentation and signal-processing project for collecting and analyzing real RF measurements.</p>
+      </div>
+    </article>
+
+  </div>
 </section>
 
-<section class="section">
-  <h2>Results / Current Status</h2>
-  <p>Built a foundation for computational power-system analysis and future research in optimization, grid analytics, and intelligent energy infrastructure.</p>
+<section id="experience" class="section">
+  <h2 class="section-title">Work Experience</h2>
 
-  <!-- Optional buttons:
-  Replace # with your GitHub repo, report PDF, or demo video when ready.
-  <div class="button-row">
-    <a class="button" href="#">GitHub Repository</a>
-    <a class="button secondary" href="#">Project Report</a>
+  <div class="card-grid">
+    <article class="card">
+      <div class="card-body">
+        <h3><a href="velco.html">VELCO — Asset Maintenance Engineering Intern</a></h3>
+        <p>
+          Transmission utility engineering work involving high-voltage equipment,
+          breaker documentation, SF6 alarm logic, condition monitoring, battery testing,
+          oil analysis, and asset data.
+        </p>
+      </div>
+    </article>
   </div>
-  -->
+</section>
+
+<section id="research" class="section">
+  <h2 class="section-title">Research Direction</h2>
+  <p class="lead">
+    I am interested in research involving computational power systems, grid optimization,
+    power-flow algorithms, numerical methods, signal processing, telemetry systems,
+    RF instrumentation, and intelligent energy infrastructure.
+  </p>
+</section>
+
+<section id="contact" class="section">
+  <h2 class="section-title">Contact</h2>
+  <p><strong>GitHub:</strong> <a href="https://github.com/markiemarc12">markiemarc12</a></p>
+  <p><strong>Email:</strong> johansenbrandon3@gmail.com</p>
 </section>
 
 </main>
 
-<footer class="footer">
+<footer>
   © 2026 Brandon Johansen
 </footer>
 

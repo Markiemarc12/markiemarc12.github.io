@@ -1,186 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- HOME PAGE: edit this file for the main landing page. -->
+  <!-- PROJECT / EXPERIENCE PAGE
+       Edit headings, paragraphs, and bullet lists below.
+  -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brandon Johansen | Electrical Engineering Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>FM Radio + Bluetooth System | Brandon Johansen</title>
+  <link rel="stylesheet" href="styles.css?v=20">
 </head>
 
 <body>
 
-<header class="hero">
-  <div class="hero-inner">
-    <div class="eyebrow">Electrical Engineering Portfolio</div>
-    <h1>Brandon Johansen</h1>
-    <p>
-      Electrical Engineering student focused on intelligent energy infrastructure,
-      power systems, control systems, RF systems, telemetry, optimization, and engineering analytics.
-    </p>
-
-    <!-- Edit these badges whenever your focus changes. -->
-    <div class="badges">
-      <span class="badge">Power Systems</span>
-      <span class="badge">RF Systems</span>
-      <span class="badge">Telemetry</span>
-      <span class="badge">Optimization</span>
-      <span class="badge">Condition Monitoring</span>
+<header class="project-header">
+  <div class="project-header-inner">
+    <a class="back-link" href="index.html">← Back to Portfolio</a>
+    <div class="eyebrow">Project / Work Detail</div>
+    <h1>FM Radio + Bluetooth System</h1>
+    <p class="hero-text">Embedded audio project combining FM reception, Bluetooth playback, display control, and source switching.</p>
+    <div class="tags">
+        <span class="tag">Embedded</span>
+        <span class="tag">FM Radio</span>
+        <span class="tag">Bluetooth</span>
+        <span class="tag">Audio</span>
     </div>
+    <div class="placeholder">Add project image here later</div>
   </div>
 </header>
 
-<nav class="navbar">
-  <div class="nav-inner">
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#research">Research</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-
-<main>
-
-<section id="about" class="section">
-  <h2>About</h2>
-  <p class="lead">
-    I work on systems that connect physical infrastructure, measurements, modeling,
-    and engineering decisions. My interests sit at the intersection of power systems,
-    RF/communications, numerical methods, and engineering data analysis.
-  </p>
-
-  <div class="two-col">
-    <div>
-      <h3>Technical Interests</h3>
-      <ul>
-        <li>Power flow solvers, Y-bus construction, and ECF formulations</li>
-        <li>Optimization and numerical methods</li>
-        <li>Newton-Raphson and Gauss-Seidel methods</li>
-        <li>Control systems and inverter modeling</li>
-        <li>Communications, RF systems, and telemetry</li>
-        <li>Engineering data analysis and condition monitoring</li>
-      </ul>
-    </div>
-
-    <div class="callout">
-      <h3>Academic Snapshot</h3>
-      <ul class="meta-list">
-        <li><strong>GPA:</strong> 3.79</li>
-        <li><strong>Advanced Coursework:</strong> EE5990 Distribution Grid Analysis and Optimization</li>
-        <li><strong>Advanced Coursework:</strong> CS 5611 Machine Learning for Engineers</li>
-      </ul>
-    </div>
-  </div>
+<main class="project-layout">
+  
+<section class="section">
+  <h2 class="section-title">Overview</h2>
+  <p class='lead'>An embedded radio system with FM reception, preloaded station selection, Bluetooth audio capability, display integration, and user control.</p>
 </section>
 
-<section id="projects" class="section">
-  <h2>Projects</h2>
-  <p class="lead">
-    Selected technical projects involving hardware, software, RF systems, power systems, and data.
-  </p>
-
-  <div class="grid">
-
-    <!-- Project card: RF Walkie-Talkie -->
-    <article class="card">
-      <a href="walkietalkie.html">
-        <img src="images/Finished_PCB.JPG" alt="Custom PCB RF walkie-talkie and FM radio system">
-      </a>
-      <div class="card-body">
-        <h3><a href="walkietalkie.html">RF Walkie-Talkie + FM Radio System</a></h3>
-        <p>
-          Custom PCB-based RF communication system integrating transceiver functionality,
-          FM radio, user controls, display, power regulation, and audio output.
-        </p>
-      </div>
-    </article>
-
-    <!-- Project card: FM Radio + Bluetooth -->
-    <article class="card">
-      <a href="fm-radio.html"><div class="placeholder-img">FM Radio + Bluetooth<br>Image Coming Soon</div></a>
-      <div class="card-body">
-        <h3><a href="fm-radio.html">FM Radio + Bluetooth System</a></h3>
-        <p>
-          Embedded audio system with FM reception, Bluetooth playback, display integration,
-          and source switching.
-        </p>
-      </div>
-    </article>
-
-    <!-- Project card: Power Systems -->
-    <article class="card">
-      <a href="power-systems.html"><div class="placeholder-img">Y-Bus / Power Flow<br>Image Coming Soon</div></a>
-      <div class="card-body">
-        <h3><a href="power-systems.html">Power Systems Modeling</a></h3>
-        <p>
-          Power-system modeling work involving Y-bus construction, feeder modeling,
-          and numerical solution methods.
-        </p>
-      </div>
-    </article>
-
-    <!-- Project card: Battery Analytics -->
-    <article class="card">
-      <a href="battery-analytics.html"><div class="placeholder-img">Battery Analytics<br>Image Coming Soon</div></a>
-      <div class="card-body">
-        <h3><a href="battery-analytics.html">Battery Analytics Tool</a></h3>
-        <p>
-          Battery test data analysis tooling with thresholds, severity tracking,
-          exports, and configurable settings.
-        </p>
-      </div>
-    </article>
-
-    <!-- Project card: Radio Telescope -->
-    <article class="card">
-      <a href="radio-telescope.html"><div class="placeholder-img">Radio Telescope<br>In Progress</div></a>
-      <div class="card-body">
-        <h3><a href="radio-telescope.html">Radio Telescope</a></h3>
-        <p>
-          Planned RF instrumentation project for collecting, processing, and analyzing
-          real radio-frequency measurements.
-        </p>
-      </div>
-    </article>
-
-  </div>
+<section class="section">
+  <h2 class="section-title">Technical Focus</h2>
+  <ul><li>FM receiver integration</li><li>Bluetooth audio module integration</li><li>User buttons and display</li><li>Power management</li><li>Source switching between audio modes</li></ul>
 </section>
 
-<section id="experience" class="section">
-  <h2>Work Experience</h2>
-
-  <div class="grid">
-    <article class="card">
-      <div class="card-body">
-        <h3><a href="velco.html">VELCO — Asset Maintenance Engineering Intern</a></h3>
-        <p>
-          Transmission utility engineering work involving high-voltage equipment,
-          breaker documentation, SF6 alarm logic, condition monitoring, and asset data.
-        </p>
-      </div>
-    </article>
-  </div>
+<section class="section">
+  <h2 class="section-title">Engineering Challenges</h2>
+  <ul><li>Coordinating multiple modules</li><li>Managing audio paths</li><li>Debugging power and signal behavior</li><li>Building a usable interface</li></ul>
 </section>
 
-<section id="research" class="section">
-  <h2>Research Direction</h2>
-  <p>
-    I am interested in research involving computational power systems, grid optimization,
-    power-flow algorithms, numerical methods, signal processing, telemetry systems,
-    RF instrumentation, and intelligent energy infrastructure.
-  </p>
-</section>
-
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p><strong>GitHub:</strong> <a href="https://github.com/markiemarc12">markiemarc12</a></p>
-  <p><strong>Email:</strong> johansenbrandon3@gmail.com</p>
+<section class="section">
+  <h2 class="section-title">Results</h2>
+  <p>Created a working embedded radio/audio system and gained experience integrating hardware modules into a complete device.</p>
 </section>
 
 </main>
 
-<footer class="footer">
+<footer>
   © 2026 Brandon Johansen
 </footer>
 

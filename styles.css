@@ -1,326 +1,60 @@
-/* =========================================================
-   Brandon Johansen Portfolio
-   Main stylesheet for every page.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- PROJECT / EXPERIENCE PAGE
+       Edit headings, paragraphs, and bullet lists below.
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio Telescope | Brandon Johansen</title>
+  <link rel="stylesheet" href="styles.css?v=20">
+</head>
 
-   How to edit:
-   - Colors are in :root
-   - Cards and sections are shared across pages
-   - Keep this file named exactly: styles.css
-   ========================================================= */
+<body>
 
-:root {
-  --bg: #070b14;
-  --bg-soft: #0f172a;
-  --panel: #ffffff;
-  --panel-soft: #f8fafc;
-  --text: #172033;
-  --muted: #64748b;
-  --line: #e2e8f0;
-  --accent: #2563eb;
-  --accent-2: #14b8a6;
-  --accent-3: #f59e0b;
-  --shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
-  --radius: 22px;
-}
+<header class="project-header">
+  <div class="project-header-inner">
+    <a class="back-link" href="index.html">← Back to Portfolio</a>
+    <div class="eyebrow">Project / Work Detail</div>
+    <h1>Radio Telescope</h1>
+    <p class="hero-text">Planned RF instrumentation and signal-processing project for collecting real measurement data.</p>
+    <div class="tags">
+        <span class="tag">RF</span>
+        <span class="tag">Signal Processing</span>
+        <span class="tag">Data Acquisition</span>
+        <span class="tag">Research</span>
+    </div>
+    <div class="placeholder">Add project image here later</div>
+  </div>
+</header>
 
-* {
-  box-sizing: border-box;
-}
+<main class="project-layout">
+  
+<section class="section">
+  <h2 class="section-title">Overview</h2>
+  <p class='lead'>Planned RF instrumentation project focused on collecting, processing, and analyzing real radio-frequency measurements.</p>
+</section>
 
-html {
-  scroll-behavior: smooth;
-}
+<section class="section">
+  <h2 class="section-title">Technical Focus</h2>
+  <ul><li>Antenna and receiver setup</li><li>RF signal acquisition</li><li>Noise filtering</li><li>Python-based data processing</li><li>Signal visualization</li></ul>
+</section>
 
-body {
-  margin: 0;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-  color: var(--text);
-  background:
-    radial-gradient(circle at 10% 0%, rgba(37, 99, 235, 0.18), transparent 32rem),
-    radial-gradient(circle at 90% 10%, rgba(20, 184, 166, 0.14), transparent 32rem),
-    linear-gradient(180deg, #eef4ff 0%, #f8fafc 42%, #ffffff 100%);
-  line-height: 1.65;
-}
+<section class="section">
+  <h2 class="section-title">Engineering Challenges</h2>
+  <ul><li>Weak-signal detection</li><li>Noise and interference</li><li>Repeatable measurement collection</li><li>Building a useful signal-processing pipeline</li></ul>
+</section>
 
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
+<section class="section">
+  <h2 class="section-title">Current Status</h2>
+  <p>This project is planned as a research-oriented bridge between RF hardware, signal processing, and data analysis.</p>
+</section>
 
-a:hover {
-  text-decoration: underline;
-}
+</main>
 
-.hero {
-  color: white;
-  background:
-    radial-gradient(circle at 25% 0%, rgba(59, 130, 246, 0.55), transparent 28rem),
-    radial-gradient(circle at 80% 20%, rgba(20, 184, 166, 0.38), transparent 24rem),
-    linear-gradient(135deg, #020617 0%, #0f172a 55%, #111827 100%);
-  padding: 88px 24px 70px;
-}
+<footer>
+  © 2026 Brandon Johansen
+</footer>
 
-.hero-inner,
-.nav-inner,
-main {
-  max-width: 1120px;
-  margin: 0 auto;
-}
-
-.eyebrow {
-  color: #93c5fd;
-  font-size: 0.9rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  margin-bottom: 14px;
-}
-
-.hero h1 {
-  margin: 0;
-  font-size: clamp(2.5rem, 7vw, 5.4rem);
-  line-height: 0.95;
-  letter-spacing: -0.05em;
-}
-
-.hero p {
-  max-width: 840px;
-  margin: 22px 0 0;
-  color: #dbeafe;
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
-}
-
-.badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 28px;
-}
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  border-radius: 999px;
-  padding: 8px 13px;
-  color: white;
-  background: rgba(255, 255, 255, 0.11);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  font-size: 0.92rem;
-  font-weight: 700;
-}
-
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  background: rgba(15, 23, 42, 0.92);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.nav-inner {
-  padding: 13px 24px;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.nav-inner a {
-  color: white;
-  font-size: 0.95rem;
-  font-weight: 800;
-}
-
-main {
-  padding: 34px 24px 60px;
-}
-
-.section {
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(226, 232, 240, 0.9);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: clamp(22px, 4vw, 34px);
-  margin-bottom: 28px;
-}
-
-.section h2 {
-  margin: 0 0 16px;
-  font-size: clamp(1.55rem, 3vw, 2.15rem);
-  letter-spacing: -0.03em;
-}
-
-.lead {
-  font-size: 1.1rem;
-  color: #334155;
-  max-width: 860px;
-}
-
-.two-col {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 26px;
-  align-items: start;
-}
-
-.callout {
-  background: linear-gradient(135deg, #eff6ff, #ecfeff);
-  border: 1px solid #bfdbfe;
-  border-left: 5px solid var(--accent);
-  border-radius: 18px;
-  padding: 20px;
-}
-
-.meta-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.meta-list li {
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
-}
-
-.meta-list li:last-child {
-  border-bottom: 0;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
-  gap: 22px;
-}
-
-.card {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.14);
-  border-color: #bfdbfe;
-}
-
-.card img {
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-  display: block;
-  background: #e2e8f0;
-}
-
-.card-body {
-  padding: 20px;
-}
-
-.card h3 {
-  margin: 0 0 10px;
-  color: #0f172a;
-  line-height: 1.22;
-}
-
-.card p {
-  color: #475569;
-  margin: 0;
-}
-
-.placeholder-img {
-  min-height: 230px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 26px;
-  color: #1e3a8a;
-  font-weight: 900;
-  background:
-    linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(20, 184, 166, 0.12)),
-    repeating-linear-gradient(45deg, rgba(148,163,184,.15) 0, rgba(148,163,184,.15) 1px, transparent 1px, transparent 12px);
-}
-
-.project-hero-img {
-  width: 100%;
-  max-height: 560px;
-  object-fit: cover;
-  border-radius: 20px;
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  margin: 18px 0 10px;
-}
-
-.page-kicker {
-  display: inline-block;
-  margin-bottom: 18px;
-  font-weight: 900;
-  color: #bfdbfe;
-}
-
-.back-link {
-  display: inline-block;
-  margin-bottom: 18px;
-  font-weight: 900;
-}
-
-.split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 22px;
-}
-
-.button-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.button {
-  display: inline-block;
-  color: white;
-  background: var(--accent);
-  padding: 11px 15px;
-  border-radius: 12px;
-  font-weight: 900;
-}
-
-.button:hover {
-  background: #1d4ed8;
-  text-decoration: none;
-}
-
-.button.secondary {
-  background: #e2e8f0;
-  color: #0f172a;
-}
-
-.footer {
-  text-align: center;
-  color: var(--muted);
-  padding: 34px 20px 52px;
-}
-
-.note {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-@media (max-width: 780px) {
-  .two-col,
-  .split {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    padding: 64px 20px 52px;
-  }
-
-  main {
-    padding: 26px 16px 50px;
-  }
-}
+</body>
+</html>
