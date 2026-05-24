@@ -1,313 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Brandon Johansen | Electrical Engineering Portfolio</title>
-
-<style>
-
-body{
-font-family:Arial,sans-serif;
-margin:0;
-background:#f5f5f5;
-line-height:1.6;
-color:#222;
-}
-
-header{
-background:#111827;
-color:white;
-padding:70px 20px;
-text-align:center;
-}
-
-header h1{
-margin:0;
-font-size:3rem;
-}
-
-header p{
-max-width:850px;
-margin:auto;
-margin-top:15px;
-font-size:1.1rem;
-}
-
-nav{
-background:#1f2937;
-padding:15px;
-text-align:center;
-position:sticky;
-top:0;
-}
-
-nav a{
-color:white;
-margin:0 20px;
-text-decoration:none;
-font-weight:bold;
-}
-
-section{
-max-width:1100px;
-margin:30px auto;
-padding:30px;
-background:white;
-border-radius:12px;
-}
-
-h2{
-border-bottom:2px solid #ddd;
-padding-bottom:10px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:25px;
-}
-
-.card{
-background:#fafafa;
-padding:20px;
-border-radius:10px;
-border:1px solid #ddd;
-transition:.2s;
-}
-
-.card:hover{
-transform:translateY(-4px);
-}
-
-.card img{
-width:100%;
-border-radius:8px;
-margin-bottom:15px;
-}
-
-.card a{
-text-decoration:none;
-color:#111827;
-}
-
-.card h3{
-margin-top:0;
-}
-
-footer{
-text-align:center;
-padding:30px;
-color:#777;
-}
-
-</style>
-
+  <!-- Project/work page. Edit the title, sections, and bullet points below. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FM Radio + Bluetooth System | Brandon Johansen</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
-
-<h1>Brandon Johansen</h1>
-
-<p>
-
-Electrical Engineering student focused on intelligent energy infrastructure,
-power systems, RF systems, optimization, telemetry, and engineering software development.
-
-</p>
-
+<header class="site-header">
+  <div class="header-inner">
+    <h1>FM Radio + Bluetooth System</h1>
+    <p>Embedded audio project combining FM reception, Bluetooth playback, display control, and source switching.</p>
+  </div>
 </header>
 
+<main>
 
-<nav>
+<section class="section">
+  <a class="back-link" href="index.html">← Back to Home</a>
 
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#experience">Experience</a>
-<a href="#research">Research</a>
-<a href="#contact">Contact</a>
+  <div class="placeholder-img">Add project image here later<br>Example path: images/fm-radio.jpg</div>
 
-</nav>
+  <h2>Overview</h2>
+  <p>Built an embedded radio system with FM reception, preloaded station selection, Bluetooth audio capability, display integration, and user control.</p>
 
+  <h2>Technical Focus</h2>
+  <ul>
+    <li>FM receiver integration</li>
+    <li>Bluetooth audio module integration</li>
+    <li>User buttons and display</li>
+    <li>Power management</li>
+    <li>Source switching between audio modes</li>
+  </ul>
 
-<section id="about">
+  <h2>Engineering Challenges</h2>
+  <ul>
+    <li>Coordinating multiple modules</li>
+    <li>Managing audio paths</li>
+    <li>Debugging power and signal behavior</li>
+    <li>Building a usable interface</li>
+  </ul>
 
-<h2>Academic Profile</h2>
+  <h2>Results / Current Status</h2>
+  <p>Created a working embedded radio/audio system and used the project to develop stronger experience with module integration, audio systems, and embedded hardware.</p>
 
-<p>
-
-Electrical Engineering student with interests in computational power systems,
-signal processing, RF systems, optimization, and engineering analytics.
-
-</p>
-
-<ul>
-
-<li><strong>GPA:</strong> 3.79</li>
-
-<li><strong>Advanced Coursework:</strong>
-
-<ul>
-
-<li>EE5990: Distribution Grid Analysis and Optimization</li>
-<li>Machine Learning for Engineers</li>
-
-</ul>
-
-</li>
-
-<li><strong>Technical Interests:</strong>
-
-<ul>
-
-<li>Power flow algorithms</li>
-<li>Y-bus formulation</li>
-<li>Newton-Raphson / Gauss-Seidel methods</li>
-<li>Optimization</li>
-<li>Control systems</li>
-<li>RF systems</li>
-<li>Telemetry and condition monitoring</li>
-
-</ul>
-
-</li>
-
-</ul>
+  <!-- Add project links here when ready.
+  <div class="button-row">
+    <a class="button" href="https://github.com/markiemarc12">GitHub Repository</a>
+    <a class="button secondary" href="reports/example-report.pdf">Project Report</a>
+  </div>
+  -->
 
 </section>
 
+</main>
 
-<section id="projects">
-
-<h2>Projects</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<a href="walkietalkie.html">
-
-<img src="Finished_PCB.JPG">
-
-<h3>RF Walkie-Talkie + FM Radio System</h3>
-
-</a>
-
-<p>
-
-Designed and built a custom PCB-based RF communication system integrating
-transceiver functionality, FM radio capability, display integration,
-audio output, and embedded controls.
-
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>FM Radio + Bluetooth System</h3>
-
-<p>
-
-Built an embedded FM radio system with Bluetooth audio playback,
-station selection, RTC integration, and display control.
-
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Power Systems Modeling</h3>
-
-<p>
-
-Built power-system modeling tools involving Y-bus construction,
-feeder modeling, and numerical power-flow concepts.
-
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Radio Telescope</h3>
-
-<p>
-
-Planned RF instrumentation project focused on collecting,
-processing, and analyzing real radio-frequency measurements.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section id="experience">
-
-<h2>Work Experience</h2>
-
-<div class="card">
-
-<h3>VELCO — Asset Maintenance Engineering Intern</h3>
-
-<ul>
-
-<li>Investigated temperature-compensated SF6 alarm logic and compared alarm behavior against field measurements.</li>
-
-<li>Analyzed nuisance alarms and deadband sensitivity using operational data and manufacturer documentation.</li>
-
-<li>Developed inspection and maintenance procedures for high-voltage equipment.</li>
-
-<li>Supporting condition monitoring efforts involving battery testing and oil analysis.</li>
-
-</ul>
-
-</div>
-
-</section>
-
-
-<section id="research">
-
-<h2>Research Interests</h2>
-
-<p>
-
-Interested in computational power systems, optimization methods,
-signal processing, telemetry systems, intelligent energy infrastructure,
-and engineering applications involving large-scale data.
-
-</p>
-
-</section>
-
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p><b>GitHub:</b> markiemarc12</p>
-
-<p><b>Email:</b> johansenbrandon3@gmail.com</p>
-
-</section>
-
-
-<footer>
-
-© 2026 Brandon Johansen
-
+<footer class="footer">
+  © 2026 Brandon Johansen
 </footer>
 
 </body>
