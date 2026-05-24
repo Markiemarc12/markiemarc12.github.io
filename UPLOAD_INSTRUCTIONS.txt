@@ -1,0 +1,22 @@
+CLEAN FINAL SITE FILES
+
+Upload the CONTENTS of this folder into the ROOT of markiemarc12.github.io.
+
+Correct file mapping:
+- index.html = homepage HTML
+- styles.css = CSS only
+- walkietalkie.html = RF project page
+- fm-radio.html = FM/Bluetooth page
+- power-systems.html = power systems page
+- battery-analytics.html = battery analytics page
+- radio-telescope.html = radio telescope page
+- velco.html = VELCO work page
+- images/Finished_PCB.JPG = PCB image
+
+Best method:
+1. Delete the broken root files from GitHub:
+   index.html, styles.css, walkietalkie.html, fm-radio.html, power-systems.html,
+   battery-analytics.html, radio-telescope.html, velco.html
+2. Upload the extracted clean files from this folder.
+3. Commit directly to main.
+4. Open https://markiemarc12.github.io/?v=cleanfinal
